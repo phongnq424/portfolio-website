@@ -201,7 +201,7 @@ For issues or questions about the design:
 
 ## 📝 Notes
 
-- All fonts are loaded from Google Fonts (Poppins)
+- All fonts are loaded from Google Fonts (Lexend)
 - Icons from Font Awesome
 - CSS Grid and Flexbox for layouts
 - Mobile-first responsive design
