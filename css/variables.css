@@ -1,0 +1,17 @@
+/* ===== RESET & VARIABLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ff6b5b;
+    --secondary-color: #00c4a7;
+    --text-light: #ffffff;
+    --text-dark: #0f2027;
+    --bg-dark: #1a1d29;
+    --bg-darker: #0f2027;
+    --accent: #06a6d6;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
