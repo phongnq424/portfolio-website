@@ -119,9 +119,13 @@
         font-size: 20px;
     }
 
+    .social-icons {
+        flex-direction: row;
+    }
+
     .contact-form,
     .social-links {
-        align-items: center;
+        align-items: flex-start;
     }
 }
 
