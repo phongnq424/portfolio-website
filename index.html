@@ -1,113 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QP Cards</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Portfolio - Software Developer</title>
   <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-  <h1 class="header"></h1>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">Your Name</span>
+      </div>
+
+      <div class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contacts</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="greeting">
+          <h1>Hello <span class="dot">.</span></h1>
+          <p class="intro-name">I'm <span id="name-placeholder">Your Name</span></p>
+        </div>
+        <h2 class="title">Software Developer</h2>
+        <div class="hero-buttons">
+          <button class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Got a project?
+          </button>
+          <button class="btn btn-secondary">
+            <i class="fas fa-file"></i> My resume
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="https://via.placeholder.com/400x400/1a1a1a/ff6b5b?text=Profile+Photo" alt="Profile">
+        </div>
+        <div class="geometric-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills-section">
+      <div class="skill-item">
+        <i class="fab fa-html5"></i>
+        <span>HTML5</span>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-css3-alt"></i>
+        <span>CSS3</span>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-js-square"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-node-js"></i>
+        <span>Node.js</span>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-react"></i>
+        <span>React</span>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-git-alt"></i>
+        <span>Git</span>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-github"></i>
+        <span>Github</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline -->
+  <section class="experience">
+    <div class="experience-timeline">
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+        <h3>Website Development</h3>
+        <p>Creating responsive and modern web applications</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>App Development</h3>
+        <p>Building feature-rich mobile and desktop applications</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-server"></i>
+        </div>
+        <h3>Backend & Hosting</h3>
+        <p>Server configuration and cloud deployment solutions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="section-title">About me</h2>
+
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          I started my software journey from passion. Through that I learned to love the process of creating from
+          scratch. Since then, this has led me to software development as it fulfills my love for learning and building
+          things.
+        </p>
+        <p>
+          Passionate about creating beautiful and functional digital experiences. Always eager to learn new technologies
+          and push creative boundaries.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-number">120 <span class="plus">+</span></span>
+          <span class="stat-label">Completed Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">95 <span class="percent">%</span></span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">10 <span class="plus">+</span></span>
+          <span class="stat-label">Years of Experience</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+
+    <div class="contact-content">
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+
+      <div class="social-links">
+        <a href="#" class="social-link" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" class="social-link" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="social-link" title="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-link" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
-  <div class="card-container">
-    <div class="card">
-      <div class="card__camera">
-        <i class='bx bxs-camera'></i>
-      </div>
-      <div class="card__heart">
-        <i class='bx bx-heart'></i>
-      </div>
-      <div class="card__img">
-        <img src="Doraemon-removebg-preview.png" alt="">
-      </div>
-      <div class="card__title">
-        BASIC INFORMATION
-      </div>
-      <div class="card__inf">
-        <p>Name: Nguyen Quy Phong</p>
-        <p>Astrology: Leo</p>
-        <p>Student at UIT</p>
-        <p>Hobby: Listening to music, Chatting with friends</p>
-        <p>A favorite quote: "Every day is the last day!"</p>
-      </div>
-      <div class="card__action">
-        <button>See Detail</button>
-      </div>
-    </div>
-    <!-- Card 2-->
-    <div class="card">
-      <div class="card__camera">
-        <i class='bx bxs-camera'></i>
-      </div>
-      <div class="card__heart">
-        <i class='bx bx-heart'></i>
-      </div>
-      <div class="card__img">
-        <img src="HuyChuong.jpg" alt="">
-      </div>
-      <div class="card__title">
-        ACHIEVEMENT
-      </div>
-      <div class="card__inf">
-        <p>1, Nhất HSG Tỉnh THPT - Tin</p>
-        <p>2, Ba HSG Tỉnh THPT - Hóa</p>
-        <p>3, Nhất tuần 4 UIT CODE CONTEST (ĐHCNTT)</p>
-        <p>4, Khuyến khích cuộc thi Algo-Challenge (ĐHCNTT)</p>
-        ...
-      </div>
-      <div class="card__action">
-        <button>See Detail</button>
-      </div>
-    </div>
-    <!-- Card 3-->
-    <div class="card">
-      <div class="card__camera">
-        <i class='bx bxs-camera'></i>
-      </div>
-      <div class="card__heart">
-        <i class='bx bx-heart'></i>
-      </div>
-      <div class="card__img">
-        <img src="Skill.png" alt="">
-      </div>
-      <div class="card__title">
-        SKILL
-      </div>
-      <div class="card__inf">
-        <p>Thuyết trình: 2đ <i class='bx bxs-microphone'></i></p>
-        <p>Viết kịch bản: 4đ <i class='bx bxs-pencil'></i></p>
-        <p>Edit: 5đ <i class='bx bxs-edit-alt'></i></p>
-        <p>Tổ chức sự kiện: 5đ <i class='bx bxs-calendar-event'></i></p>
-        <p>Bấm <strong>"See Detail"</strong> coi một số ấn phẩm của tớ nha</p>
-      </div>      
-      <div class="card__action">
-        <button>See Detail</button>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card__camera">
-        <i class='bx bxs-camera'></i>
-      </div>
-      <div class="card__heart">
-        <i class='bx bx-heart'></i>
-      </div>
-      <div class="card__img">
-        <img src="SendMe.png" alt="">
-      </div>
-      <div class="card__title">
-        SEND ME
-      </div>
-      <div class="card__inf">
-        Nếu bạn có lời gì muốn gửi cho mình, bấm vô <strong>See detail</strong> nhé!
-      </div>
-      <div class="card__action">
-        <button>See Detail</button>
-      </div>
-    </div>
-  </div>
 </body>
+
 </html>
