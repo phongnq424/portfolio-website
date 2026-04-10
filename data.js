@@ -74,6 +74,18 @@ export const projects = [
         technologies: ['Kotlin', 'Firebase', 'Android Studio'],
         github: '#',
         demo: '#'
+    },
+    {
+        id: 4,
+        title: 'Job Portal System',
+        description:
+            'A comprehensive job portal application for connecting employers and job seekers, featuring advanced search and filtering options.',
+        role: 'Backend Developer',
+        image: 'images/project/project4.png',
+        alt: 'Job Portal System',
+        technologies: ['Node.js', 'PostgreSQL', 'Socket.io', 'Cron Jobs'],
+        github: '#',
+        demo: '#'
     }
 ];
 
